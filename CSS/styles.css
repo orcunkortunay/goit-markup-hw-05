@@ -406,6 +406,11 @@ body:has(#contacts:target) .menu-nav a[href="#contacts"]::after {
     gap: 80px;
 }
 
+.footer-wrap>.footer-subscribe {
+    margin: 0;
+    flex: 0 0 auto;
+ }
+
 .footer-brand {
     max-width: 264px;
 }
@@ -419,8 +424,7 @@ body:has(#contacts:target) .menu-nav a[href="#contacts"]::after {
 .page-footer .footer-social {
     display: flex;
     gap: 16px;
-    justify-content: flex-start;
-    margin: 0;
+align-items: center;    margin: 0;
     padding: 0;
 }
 
@@ -438,6 +442,20 @@ body:has(#contacts:target) .menu-nav a[href="#contacts"]::after {
 .page-footer .social-link .icon {
     width: 24px;
     height: 24px;
+}
+
+.footer-social-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 16px;
+}
+
+.footer-social-box .footer-social-title {
+    flex: 0 0 100%;
+    /* başlık ilk satırı tamamen kaplasın */
+    margin: 0;
+    /* boşluğu row-gap yönetsin */
 }
 
 .page-footer .logo {
@@ -474,7 +492,7 @@ body:has(#contacts:target) .menu-nav a[href="#contacts"]::after {
 
 /* Footer subscribe */
 .footer-subscribe {
-    margin-left: auto;
+    margin-left: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -789,3 +807,4 @@ body:has(#contacts:target) .menu-nav a[href="#contacts"]::after {
 .modal-submit:focus-visible {
     background: #31C6A7;
 }
+
